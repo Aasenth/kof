@@ -1,0 +1,86 @@
+#kof {
+    width: 1280px;
+    height: 720px;
+    background-image: url(/static/images/background/0.gif);
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+}
+
+#kof>.kof-head {
+    width: 100%;
+    height: 80px;
+    /* background-color: lightblue; */
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#kof>.kof-head>.kof-head-hp0 {
+    height: 40px;
+    width: calc(50% - 60px);
+    margin-left: 20px;
+    border: white 5px solid;
+    box-sizing: border-box;
+    border-right: none;
+}
+
+#kof>.kof-head>.kof-head-time {
+    height: 60px;
+    width: 80px;
+    background-color: orange;
+    border: white 5px solid;
+    box-sizing: border-box;
+    color: white;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 50px;
+    /*去掉了内盒子模型边距 */
+    user-select: none;
+}
+
+#kof>.kof-head>.kof-head-hp1 {
+    height: 40px;
+    width: calc(50% - 60px);
+    border: white 5px solid;
+    box-sizing: border-box;
+    border-left: none;
+}
+
+#kof>.kof-head>.kof-head-hp0>div {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    float: right;
+}
+
+#kof>.kof-head>.kof-head-hp1>div {
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+
+#kof>.kof-head>.kof-head-hp0>div>div {
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+    float: right;
+}
+
+#kof>.kof-head>.kof-head-hp1>div>div {
+    height: 100%;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.kof-ko {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 250px;
+    left: 560px;
+    /* background-image: url("/static/images/background/ko.png"); */
+    background-position: center;
+}
